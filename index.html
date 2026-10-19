@@ -22,6 +22,21 @@
 
 /* v4 service detail */
 .service-detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:34px}.service-detail{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 12px 32px rgba(11,45,91,.045);display:flex;flex-direction:column}.service-detail .number{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:1px}.service-detail h3{font-size:25px;letter-spacing:-.7px;margin:12px 0 7px}.service-detail .service-top p{color:var(--muted);margin:0;min-height:58px}.service-detail h4{font-size:14px;margin:24px 0 8px;color:var(--navy)}.service-detail ul{margin:0 0 24px;padding-left:20px;line-height:1.9;font-size:14px}.service-detail li::marker{color:var(--blue)}.deliverable{margin-top:auto;padding:15px 17px;background:#f2f6fd;border-radius:12px;display:flex;flex-wrap:wrap;gap:4px 12px;font-size:13px}.deliverable strong{color:var(--navy)}.deliverable span{color:#53647e}.service-footnote{font-size:12px;color:var(--muted);margin-top:22px}@media(max-width:760px){.service-detail-grid{grid-template-columns:1fr;gap:14px}.service-detail{padding:23px}.service-detail .service-top p{min-height:0}.service-detail h3{font-size:22px}}
+
+/* v5 — contact form */
+.contact .wrap{display:grid;grid-template-columns:.8fr 1.2fr;align-items:start;gap:60px}
+.contact .contact-intro p{line-height:1.9}.contact-email{display:inline-block;margin-top:14px;color:#b7d1ff;font-weight:700;overflow-wrap:anywhere}
+.inquiry-form{background:#fff;color:var(--ink);border-radius:18px;padding:32px;box-shadow:0 20px 50px rgba(0,0,0,.13)}
+.inquiry-form h3{margin:0 0 6px;font-size:23px}.inquiry-form .form-hint{font-size:13px;color:var(--muted);margin:0 0 20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-field{display:flex;flex-direction:column;gap:7px;min-width:0}.form-field.wide{grid-column:1/-1}
+.form-field label{font-size:13px;font-weight:750}.form-field input,.form-field select,.form-field textarea{font:inherit;font-size:14px;width:100%;padding:12px 13px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:var(--ink)}
+.form-field textarea{min-height:132px;resize:vertical}.form-field :is(input,select,textarea):focus{outline:2px solid #93c5fd;outline-offset:1px}
+.privacy-box{font-size:12px;color:#53647e;background:#f2f6fd;border-radius:10px;padding:13px 15px;margin-top:18px;line-height:1.8}
+.privacy-check{display:flex;align-items:flex-start;gap:9px;font-size:13px;margin:15px 0 18px;line-height:1.6}.privacy-check input{margin-top:4px;accent-color:var(--blue)}
+.submit-inquiry{width:100%;border:0;border-radius:10px;background:var(--blue);color:#fff;padding:15px 20px;font:inherit;font-weight:800;cursor:pointer}.submit-inquiry:hover{background:#144dc7}
+.form-note{font-size:12px;color:#64748b;margin:12px 0 0;line-height:1.7}
+@media(max-width:850px){.contact .wrap{grid-template-columns:1fr;gap:24px}}
+@media(max-width:510px){.inquiry-form{padding:21px}.form-grid{grid-template-columns:1fr}.form-field.wide{grid-column:auto}}
 </style></head><body>
 <header><div class="wrap"><a aria-label="빌드웍스 홈" class="brand" href="#top"><img alt="BUILDWORKS 빌드웍스 로고" src="assets/buildworks-logo.png"/></a><nav><a href="#about">회사소개</a><a href="#services">서비스</a><a href="#process">진행절차</a><a class="pill" href="#contact">문의 안내</a></nav></div></header>
 <main id="top"><div class="hero"><div class="wrap"><div><div class="eyebrow">CONSTRUCTION MANAGEMENT &amp; BUSINESS SUPPORT</div><h1>건설 실무의<br/><em>새로운 기준,</em><br/>빌드웍스</h1><p>견적부터 공무, 원가관리, 공사관리까지.<br/>현장의 실무를 체계적으로 지원합니다.</p><div class="actions"><a class="pill" href="#services">서비스 살펴보기 →</a><a class="outline" href="#contact">상담 안내</a></div><div class="hero-meta"><span>ESTIMATE</span><span>ADMINISTRATION</span><span>COST &amp; PROJECT</span></div></div><div aria-label="현대적인 건축물 외관" class="hero-photo" role="img"></div></div></div>
@@ -34,4 +49,22 @@
 </div><p class="service-footnote">※ 상기 내용은 지원 가능한 업무의 예시이며, 실제 수행 범위·일정·비용은 자료 검토 후 협의합니다. 법정 자격·등록이 필요한 설계·감리·기술인 업무는 제외됩니다.</p></div></section>
 <section id="about"><div class="wrap about-grid"><div><div class="kicker">ABOUT BUILDWORKS</div><div class="statement">현장은 시공에 집중하세요.<br/><span style="color:var(--blue)">복잡한 실무는 더 효율적으로.</span></div></div><div><p>빌드웍스는 건설 현장에서 반복적으로 발생하는 견적·공무·원가관리 업무를 지원하는 실무 파트너를 지향합니다.</p><p>필요한 업무를 명확히 정리하고, 실제 현장에서 활용할 수 있는 문서와 자료를 만드는 데 집중합니다.</p><p class="note">※ 법령상 별도 자격·등록이 필요한 설계·감리·법정 기술인 업무 등은 제공 범위에 포함되지 않습니다.</p></div></div></section>
 <section class="services" id="process"><div class="wrap"><div class="section-head"><div class="kicker">HOW WE WORK</div><h2>진행 절차</h2></div><div class="steps"><div class="step"><small>STEP 01</small><strong>업무 문의</strong><p>필요한 문서와 작업 범위를 확인합니다.</p></div><div class="step"><small>STEP 02</small><strong>자료 검토</strong><p>도면·내역·일정 등 제공 자료를 확인합니다.</p></div><div class="step"><small>STEP 03</small><strong>범위 협의</strong><p>수행 가능 업무, 납기 및 비용을 협의합니다.</p></div><div class="step"><small>STEP 04</small><strong>실무 지원</strong><p>합의된 범위에 따라 결과물을 제공합니다.</p></div></div></div></section>
-<section class="contact" id="contact"><div class="wrap"><div><div class="kicker" style="color:#94bbff">CONTACT</div><h2>프로젝트에 필요한 실무,<br/>함께 검토하겠습니다.</h2><p>상담 채널 준비 중입니다. 문의처가 확정되면 이곳에 안내됩니다.</p></div><a class="outline" href="#top">맨 위로 ↑</a></div></section></main><footer><div class="wrap">BUILDWORKS · 빌드웍스　|　건설 실무를 연결하는 전문가<br/>© 2026 BUILDWORKS. 홈페이지 준비 중.</div></footer></body></html>
+<section class="contact" id="contact"><div class="wrap">
+<div class="contact-intro"><div class="kicker" style="color:#94bbff">CONTACT BUILDWORKS</div><h2>견적·업무 문의</h2><p>필요한 업무와 현장 상황을 간단히 남겨주세요.<br/>내용을 검토한 뒤 회신드리겠습니다.</p><a class="contact-email" href="mailto:buildworks.cm@gmail.com">buildworks.cm@gmail.com</a><p style="font-size:13px">※ 의뢰 가능 여부·범위·일정·비용은 별도 협의합니다.<br/>주민등록번호 등 민감정보는 입력하지 마세요.</p></div>
+<form class="inquiry-form" action="https://formspree.io/f/xqpejwjr" method="POST" accept-charset="UTF-8">
+<h3>상담 요청서</h3><p class="form-hint">* 표시된 항목은 필수 입력입니다.</p>
+<input type="hidden" name="_subject" value="[BUILDWORKS] 홈페이지 신규 견적·업무 문의"/>
+<div class="form-grid">
+<div class="form-field"><label for="company">회사명 / 소속</label><input id="company" name="회사명" type="text" autocomplete="organization" maxlength="100" placeholder="회사명 또는 개인"/></div>
+<div class="form-field"><label for="person">담당자명 *</label><input id="person" name="담당자" type="text" autocomplete="name" maxlength="60" required placeholder="성함을 입력해 주세요"/></div>
+<div class="form-field"><label for="email">회신 이메일 *</label><input id="email" name="email" type="email" autocomplete="email" maxlength="150" required placeholder="example@company.com"/></div>
+<div class="form-field"><label for="phone">연락처 *</label><input id="phone" name="연락처" type="tel" autocomplete="tel" maxlength="30" required placeholder="010-0000-0000"/></div>
+<div class="form-field wide"><label for="service">의뢰 분야 *</label><select id="service" name="의뢰분야" required><option value="" disabled selected>의뢰 분야를 선택해 주세요</option><option>견적 · 내역</option><option>현장 공무</option><option>원가관리</option><option>공사관리 지원</option><option>기타 / 상담</option></select></div>
+<div class="form-field wide"><label for="message">요청 내용 *</label><textarea id="message" name="message" maxlength="5000" required placeholder="현장 위치(시·군 단위), 요청 업무, 희망 일정 등을 적어주세요. 중요한 도면이나 계약자료는 초기 문의에 첨부하지 마세요."></textarea></div>
+</div>
+<div class="privacy-box"><strong>개인정보 수집·이용 안내</strong><div>수집 항목: 담당자명, 이메일, 연락처 및 문의 시 제공한 정보 (회사명은 선택)</div><div>이용 목적: 문의 접수, 상담 및 회신</div><div>보유 기간: 상담 목적 달성 후 1년 이내 삭제 (법령상 보존 의무가 있는 경우 제외)</div><div>접수 서비스: Formspree를 통해 정보가 전송·처리됩니다. 국외 처리 가능성을 포함한 서비스 약관·개인정보 처리방침을 확인해 주세요.</div></div>
+<label class="privacy-check"><input type="checkbox" name="개인정보동의" value="동의" required/><span>위 개인정보 수집·이용 안내를 확인했으며 이에 동의합니다. *</span></label>
+<div style="position:absolute;left:-9999px" aria-hidden="true"><label for="website">이 항목은 비워두세요</label><input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off"/></div>
+<button class="submit-inquiry" type="submit">견적·업무 문의 보내기 →</button>
+<p class="form-note">제출하면 Formspree 접수 확인 화면으로 이동할 수 있습니다. 전송 오류가 나면 위 이메일로 문의해 주세요.</p>
+</form></div></section></main><footer><div class="wrap">BUILDWORKS · 빌드웍스　|　건설 실무를 연결하는 전문가<br/>© 2026 BUILDWORKS. All rights reserved.</div></footer></body></html>
